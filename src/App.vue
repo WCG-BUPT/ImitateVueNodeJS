@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <Header />
+    <div class='main-section'>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -34,7 +37,7 @@ export default {
 <style lang="scss" scoped>
 .main-section {
   margin: auto;
-  margin-top: 40px;   /* for Header */
+  margin-top: 50px;   /* for Header */
   width: 1200px;
 }
 </style>
