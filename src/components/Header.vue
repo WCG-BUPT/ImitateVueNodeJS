@@ -2,7 +2,7 @@
   <div class="header">
     <div class="info">
       <a href='https://cnodejs.org/'>
-        <img :src='require("@/assets/image/condejs.svg")' alt="网站logo" />
+        <img :src='require("@/assets/image/cnodejs.svg")' alt="网站logo" />
       </a>
       <span @click="dialogVisible = true">关于</span>
     </div>
@@ -41,9 +41,19 @@ export default {
       width: 120px;
       height: 100%;
       display: block;
+      float: left;
       img {
         padding-top: 10px;
       }
+    }
+    span {
+      float: right;
+      height: 50px;
+      line-height: 50px;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: bold;
     }
   }
 }
