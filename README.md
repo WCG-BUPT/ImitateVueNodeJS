@@ -1,5 +1,5 @@
-# imitate_vue_cnode_js
-本项目为模仿https://github.com/shuiRong/VueCnodeJS 的练习项目，目前还未完善，正在努力cloding。
+# CNode重构-vue练习项目
+本项目为模仿https://github.com/shuiRong/VueCnodeJS 的练习项目，目前还未完善，正在努力coding。
 
 ## Project setup
 ```
