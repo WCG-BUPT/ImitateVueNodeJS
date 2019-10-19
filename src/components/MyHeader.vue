@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: "Header",
+  name: "MyHeader",
   data() {
     return {
       dialogVisible: false
