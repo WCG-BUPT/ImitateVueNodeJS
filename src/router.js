@@ -12,6 +12,16 @@ export default new Router({
       component: Home
     },
     {
+      path: '/topic/:id',
+      name: 'topic',
+      component: Topic
+    },
+    {
+      path: '/user/:id',
+      name: 'user',
+      component: User
+    },
+    {
       path: '/topic',
       redirect: '/'
     },
