@@ -1,30 +1,16 @@
 # CNode重构-vue练习项目
 本项目为模仿https://github.com/shuiRong/VueCnodeJS 的练习项目，目前还未完善，正在努力coding。
 
-## Project setup
+## 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## 运行项目
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## to-do
+完善Topic、User
+熟悉发布-订阅模式的用法（暂时鸽了去看Head First设计模式）

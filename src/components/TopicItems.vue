@@ -1,15 +1,15 @@
 <template>
   <div>
     <div class="topic" v-for="item in list" :key="item.id">
-      <a>
+      <router-link :to="{path: '/user/' + item.author.loginname}">
         <img :src="item.author.avatar_url" alt="用户头像" />
-      </a>
+      </router-link>
       <span class="count">
         <em>{{ item.reply_count }}</em> / <em>{{ item.visit_count }}</em>
       </span>
-      <a class="title">
+      <router-link class="title" :to="{path: '/topic/' + item.id}">
         {{ item.title }}
-      </a>
+      </router-link>
       <span class="time">
         {{ $moment(item.last_reply_at, 'YYYY-MM-DD').fromNow() }}
       </span>
@@ -23,8 +23,8 @@ export default {
   props: ["list"],
   data() {
     return {
-      article: []
-    };
+      
+    }
   }
 };
 </script>
@@ -58,6 +58,10 @@ export default {
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: left;
+    color: #42b983;
+    font-weight: 600;
+    padding: 0px 2px;
+    text-decoration: none;
   }
   span.time {
     width: 70px;

@@ -11,6 +11,14 @@ export const getTopicItems = data => {
     })
 }
 
+// 获取帖子详情数据
+export const getTopicById = id => {
+    return request({
+      url: `/topic/${id}`,
+      method: 'get'
+    })
+}
+
 // // 获取用户详情数据
 // export const getUserByName = loginname => {
 //     return request({
