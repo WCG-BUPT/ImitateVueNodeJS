@@ -50,14 +50,25 @@ export default {
         page: this.page,
         limit: this.limit,
         tab: this.tab
-      }).then(res => {
-        this.list = res.data
+      }).then(res => {    //请求成功时的返回值赋给res
+        this.list = res.data.data
+        this.limit = this.limit + 10
       })
+    },
+    // get new topics when page is scrolled down
+    scrollMethod() {
+      const sumH = document.documentElement.scrollHeight
+      const viewH = document.documentElement.clientHeight
+      const scrollH = document.documentElement.scrollTop
+      if (viewH + scrollH >= sumH) {
+        this.getTopics();
+      }
     }
   },
 
   created() {
     this.getTopics()
+    window.addEventListener("scroll", this.scrollMethod);
   },
 
   components: {
